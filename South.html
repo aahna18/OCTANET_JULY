@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>South</title>
+<style type="text/css">
+	*{padding:0; margin:0; box-sizing: border-box;}
+	header{
+		width: 100%;
+		height: 100vh;
+		background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.2)), url('p2.jpeg');
+		background-size: cover;
+		font-family: san-serif;
+	}
+	nav{
+		width: 100%;
+		height: 100px;
+		color: white;
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+	}
+	.logo{
+		font-size: 2em;
+		letter-spacing: 2px;
+	}
+	.menu a{
+		text-decoration: none;
+		color: white;
+		padding: 10px 20px;
+		font-size: 20px;
+		position: relative;
+	}
+	.menu a:before{
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 0%;
+		height: 100%;
+		border-bottom: 2px solid rgb(180,154,107);
+		transition: 0.4s linear;
+	}
+	.menu a:hover:before{
+		width: 100%;
+	}
+	.register a{
+		text-decoration: none;
+		color: white;
+		padding: 10px 20px;
+		font-size: 20px;
+		background: rgb(180,154,107);
+		border-radius: 10px;
+		transition: 0.4s;
+	}
+	.register a:hover{
+		background: transparent;
+		border: 1px solid rgb(180,154,107);
+		color: white;
+	}
+	.h-txt{
+		max-width: 650px;
+		position: sticky;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%,-50%);
+		text-align: center;
+		color: white;
+	}
+	.h-txt span{
+		letter-spacing: 5px;
+		font-size: 3.3em;
+	}
+	.h-txt h1{
+		font-size: 1.5em;
+	}
+	.flip-card {
+  		background-color: transparent;
+  		width: 200px;
+  		height: 150px;
+  		border: 1px solid rgb(180,154,107);
+ 		perspective: 1000px; 
+		border-radius: 10px;
+		margin: 75px;
+	}
+	.flip-card-inner {
+  		position: relative;
+  		width: 100%;
+  		height: 100%;
+ 		text-align: center;
+  		transition: transform 0.8s;
+  		transform-style: preserve-3d;
+	}
+	.flip-card:hover .flip-card-inner {
+  		transform: rotateY(180deg);
+	}
+	.flip-card-front, .flip-card-back {
+	  	position: absolute;
+  		width: 100%;
+  		height: 100%;
+  		-webkit-backface-visibility: hidden;
+  		backface-visibility: hidden;
+		border-radius: 10px;
+	}
+	.flip-card-front {
+  		background-color: rgb(180,154,107);
+  		color: white;
+	}
+	.flip-card-front h1{
+		font-size: 2em;
+	}
+	.flip-card-back {
+  		background-color: rgb(120,154,107);;
+  		color: white;
+  		transform: rotateY(180deg);
+	}
+	.flip-card-back h1{
+		font-size: 1.5em;
+	}
+</style>
+<body>
+<header>
+	<nav>
+		<div class="logo">
+			HODOPHILE
+		</div>
+		<div class="menu">
+			<a href="HODOPHILE.html">Home</a>
+			<a href="#">North</a>
+			<a href="#">East</a>
+			<a href="#">West</a>
+			<a href="#">Central</a>
+		</div>
+		<div class="register">
+			<a href="#">Offers</a>
+		</div>
+	</nav>
+	<br><br><br>
+	<h1 align="center" style="color:white; font-size:3.5em">SOUTH INDIA</h1><br>
+	<h2 align="center" style="color:white; font-size:2.2em"> A Quick & Handy Guide!</h2><br>
+	<p align="center" style="color:white; font-size:1.3em"> Lush green backwaters, beautiful beaches and architectural wonders 
+		have made South India a leader in Indian Tourism Industry. With five major states, <br>along with the two island 
+		groups of Lakshadweep in the Arabian Sea and the Andaman and Nicobar Islands in the Bay of Bengal, <br>
+		South India offers a wide range of options to the discerning traveler.
+	</p>
+	<div class="boxesContainer">
+	<div class="flip-card">
+  		<div class="flip-card-inner">
+   			 <div class="flip-card-front">
+				<br>
+				<h1>Coorg</h1>
+				<br><br>
+				<p font-size: 1.5em>Karnataka</p>
+    			</div>
+    			<div class="flip-card-back">
+				<br>
+     				<h1>Do visit the blog!</h1>
+				<br><br>
+     				<div class="register">
+					<a href="#">Blog</a>
+				</div>
+    			</div>
+  		</div>
+	</div>
+	<selection class="h-txt">
+		<span>Other BLOGS coming soon!!</span>
+	</selection>
+</header>
+</body>
+</head>
